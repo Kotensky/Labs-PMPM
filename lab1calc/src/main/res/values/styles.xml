@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="CalculatorTableRow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/button_text</item>
+    </style>
+
+    <style name="CalculatorButton.Number">
+        <item name="android:background">@color/number_button_normal</item>
+        <item name="android:onClick">onClickNumber</item>
+    </style>
+
+    <style name="CalculatorButton.Equal">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="CalculatorButton.Operation">
+        <item name="android:onClick">onClickOperation</item>
+        <item name="android:background">@color/operation_button_normal</item>
+    </style>
+
+</resources>
