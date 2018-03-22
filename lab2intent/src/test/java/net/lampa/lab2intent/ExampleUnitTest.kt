@@ -1,4 +1,4 @@
-package com.kotensky.labspmpm
+package net.lampa.lab2intent
 
 import org.junit.Test
 

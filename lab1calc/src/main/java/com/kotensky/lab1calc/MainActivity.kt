@@ -1,7 +1,7 @@
 package com.kotensky.lab1calc
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.HorizontalScrollView
 import android.widget.TextView
@@ -11,6 +11,7 @@ import java.lang.Math.sqrt
 class MainActivity : AppCompatActivity() {
 
     private var isStartOver = false
+    private var isZeroDiv = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,14 +25,16 @@ class MainActivity : AppCompatActivity() {
         main_field_txt.text = "0"
         first_number_txt.text = ""
         operation_txt.text = ""
+        isZeroDiv = false
     }
 
     fun onClickNumber(v: View) {
-        if (isStartOver) {
-            main_field_txt.text = "0"
+        if (isStartOver || isZeroDiv) {
+            clearField()
             isStartOver = false
         }
-        if (v !is TextView)
+
+        if (v !is TextView || main_field_txt.text.length >= 11)
             return
         if (v.text == "." && first_number_txt.text.toString().contains('.')) {
             return
@@ -45,7 +48,11 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun onClickDelete(view: View) {
+    fun onClickBackspace(view: View) {
+        if (isZeroDiv) {
+            clearField()
+            return
+        }
         if (main_field_txt.text.isEmpty())
             return
         main_field_txt.text = main_field_txt.text.toString().substring(0, main_field_txt.text.length - 1)
@@ -55,6 +62,10 @@ class MainActivity : AppCompatActivity() {
 
 
     fun onClickOperation(view: View) {
+        if (isZeroDiv) {
+            clearField()
+            return
+        }
         if (operation_txt.text.isEmpty()) {
             first_number_txt.text = main_field_txt.text.toString()
             main_field_txt.text = "0"
@@ -69,6 +80,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickSqrt(view: View) {
+        if (isZeroDiv) {
+            clearField()
+            return
+        }
         val number =
                 if (!first_number_txt.text.isEmpty()) {
                     first_number_txt.text.toString().toDouble()
@@ -82,6 +97,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickEqual(view: View) {
+        if (isZeroDiv)
+            return
+
         var firstNumber =
                 if (first_number_txt.text.isEmpty()) {
                     0.0
@@ -101,7 +119,9 @@ class MainActivity : AppCompatActivity() {
             "*" -> firstNumber *= secondNumber
             "/" -> {
                 if (secondNumber == 0.0) {
-                    lalall
+                    clearField()
+                    isZeroDiv = true
+                    main_field_txt.text = getString(R.string.zero_div_error)
                     return
                 } else {
                     firstNumber /= secondNumber

@@ -17,6 +17,15 @@
         <item name="android:baselineAligned">false</item>
     </style>
 
+    <style name="CalculatorTableRowLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:layout_marginLeft">56dp</item>
+        <item name="android:layout_marginRight">56dp</item>
+    </style>
+
     <style name="CalculatorButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>

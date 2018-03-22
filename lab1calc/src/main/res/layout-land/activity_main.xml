@@ -4,57 +4,60 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <TextView
-        android:id="@+id/first_number_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:enabled="false"
-        android:gravity="end"
-        android:maxLength="11"
-        android:paddingEnd="32dp"
-        android:paddingTop="32dp"
-        android:singleLine="true"
-        android:textColor="@color/button_text_gray"
-        android:textSize="22sp" />
-
-    <TextView
-        android:id="@+id/operation_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:enabled="false"
-        android:gravity="end"
-        android:maxLength="1"
-        android:paddingEnd="32dp"
-        android:paddingTop="16dp"
-        android:singleLine="true"
-        android:textColor="@color/button_text_gray"
-        android:textSize="22sp" />
 
     <HorizontalScrollView
         android:id="@+id/main_field_scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
 
-        <TextView
-            android:id="@+id/main_field_txt"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:enabled="false"
-            android:gravity="end"
-            android:paddingBottom="32dp"
-            android:paddingEnd="32dp"
-            android:paddingTop="32dp"
-            android:singleLine="true"
-            android:text="0"
-            android:textColor="@color/button_text"
-            android:textSize="36sp" />
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/first_number_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:enabled="false"
+                android:paddingEnd="16dp"
+                android:singleLine="true"
+                android:textColor="@color/button_text_gray"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/operation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:enabled="false"
+                android:gravity="end"
+                android:maxLength="1"
+                android:paddingEnd="16dp"
+                android:singleLine="true"
+                android:textColor="@color/button_text_gray"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/main_field_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:enabled="false"
+                android:gravity="end"
+                android:paddingEnd="32dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/button_text"
+                android:textSize="36sp" />
+        </LinearLayout>
     </HorizontalScrollView>
 
-    <TableRow style="@style/CalculatorTableRow">
+    <TableRow style="@style/CalculatorTableRowLand">
 
         <Button
             android:id="@+id/clear_btn"
@@ -79,7 +82,7 @@
 
     </TableRow>
 
-    <TableRow style="@style/CalculatorTableRow">
+    <TableRow style="@style/CalculatorTableRowLand">
 
         <Button
             android:id="@+id/btn_7"
@@ -103,7 +106,7 @@
 
     </TableRow>
 
-    <TableRow style="@style/CalculatorTableRow">
+    <TableRow style="@style/CalculatorTableRowLand">
 
         <Button
             android:id="@+id/btn_4"
@@ -127,7 +130,7 @@
 
     </TableRow>
 
-    <TableRow style="@style/CalculatorTableRow">
+    <TableRow style="@style/CalculatorTableRowLand">
 
         <Button
             android:id="@+id/btn_1"
@@ -153,7 +156,7 @@
 
     </TableRow>
 
-    <TableRow style="@style/CalculatorTableRow">
+    <TableRow style="@style/CalculatorTableRowLand">
 
         <Button
             android:id="@+id/point_btn"

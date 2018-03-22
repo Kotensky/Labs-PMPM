@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab2 Intent</string>
+    <string name="phone">Телефон</string>
+    <string name="name">Ім\'я</string>
+    <string name="surname">Прізвище</string>
+    <string name="start_point">Початкова точка</string>
+    <string name="end_point">Кінцева точка</string>
+    <string name="street">Вулиця</string>
+    <string name="house">Будинок</string>
+    <string name="finish">Готово</string>
+</resources>
