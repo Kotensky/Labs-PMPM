@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/lab1calc" />
             <option value="$PROJECT_DIR$/lab2intent" />
             <option value="$PROJECT_DIR$/lab3list" />
+            <option value="$PROJECT_DIR$/lab4db" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

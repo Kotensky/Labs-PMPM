@@ -10,6 +10,7 @@
       <module fileurl="file://E:/Android/Projects/Labs-PMPM/lab1calc/lab1calc.iml" filepath="E:/Android/Projects/Labs-PMPM/lab1calc/lab1calc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2intent/lab2intent.iml" filepath="$PROJECT_DIR$/lab2intent/lab2intent.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab3list/lab3list.iml" filepath="$PROJECT_DIR$/lab3list/lab3list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4db/lab4db.iml" filepath="$PROJECT_DIR$/lab4db/lab4db.iml" />
     </modules>
   </component>
 </project>
