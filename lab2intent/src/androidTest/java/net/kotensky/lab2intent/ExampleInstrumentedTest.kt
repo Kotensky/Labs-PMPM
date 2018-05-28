@@ -1,4 +1,4 @@
-package net.lampa.lab2intent
+package net.kotensky.lab2intent
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("net.lampa.lab2intent", appContext.packageName)
+        assertEquals("net.kotensky.lab2intent", appContext.packageName)
     }
 }

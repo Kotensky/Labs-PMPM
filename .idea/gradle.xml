@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lab1calc" />
             <option value="$PROJECT_DIR$/lab2intent" />
+            <option value="$PROJECT_DIR$/lab3list" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="net.lampa.lab2intent.LoginActivity">
+    tools:context="net.kotensky.lab2intent.com.kotensky.lab2intent.LoginActivity">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_phone"

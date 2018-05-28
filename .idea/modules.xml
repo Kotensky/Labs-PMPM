@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Labs-PMPM.iml" filepath="$PROJECT_DIR$/.idea/Labs-PMPM.iml" />
-      <module fileurl="file://E:\Android\Projects\Labs-PMPM\LabsPMPM.iml" filepath="E:\Android\Projects\Labs-PMPM\LabsPMPM.iml" />
-      <module fileurl="file://E:\Android\Projects\Labs-PMPM\app\app.iml" filepath="E:\Android\Projects\Labs-PMPM\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LabsPMPM.iml" filepath="$PROJECT_DIR$/LabsPMPM.iml" />
+      <module fileurl="file://E:/Android/Projects/Labs-PMPM/LabsPMPM.iml" filepath="E:/Android/Projects/Labs-PMPM/LabsPMPM.iml" />
+      <module fileurl="file://E:/Android/Projects/Labs-PMPM/app/app.iml" filepath="E:/Android/Projects/Labs-PMPM/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1calc/lab1calc.iml" filepath="$PROJECT_DIR$/lab1calc/lab1calc.iml" />
-      <module fileurl="file://E:\Android\Projects\Labs-PMPM\lab1calc\lab1calc.iml" filepath="E:\Android\Projects\Labs-PMPM\lab1calc\lab1calc.iml" />
+      <module fileurl="file://E:/Android/Projects/Labs-PMPM/lab1calc/lab1calc.iml" filepath="E:/Android/Projects/Labs-PMPM/lab1calc/lab1calc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2intent/lab2intent.iml" filepath="$PROJECT_DIR$/lab2intent/lab2intent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3list/lab3list.iml" filepath="$PROJECT_DIR$/lab3list/lab3list.iml" />
     </modules>
   </component>
 </project>

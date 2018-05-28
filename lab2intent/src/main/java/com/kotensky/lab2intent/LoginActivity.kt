@@ -1,4 +1,4 @@
-package net.lampa.lab2intent
+package com.kotensky.lab2intent
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
+import net.kotensky.lab2intent.R
+import net.kotensky.lab2intent.R.id.*
 
 class LoginActivity : AppCompatActivity() {
 

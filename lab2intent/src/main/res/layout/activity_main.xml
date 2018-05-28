@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="net.lampa.lab2intent.MainActivity">
+    tools:context="com.kotensky.lab2intent.MainActivity">
 
     <TextView
         android:id="@+id/full_name_txt"

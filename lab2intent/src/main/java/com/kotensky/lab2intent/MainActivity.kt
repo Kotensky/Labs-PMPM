@@ -1,16 +1,17 @@
-package net.lampa.lab2intent
+package com.kotensky.lab2intent
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.kotensky.lab2intent.LoginActivity.Companion.NAME_KEY
+import com.kotensky.lab2intent.LoginActivity.Companion.PHONE_KEY
+import com.kotensky.lab2intent.LoginActivity.Companion.SURNAME_KEY
+import com.kotensky.lab2intent.SetPathActivity.Companion.POINT_FROM_KEY
+import com.kotensky.lab2intent.SetPathActivity.Companion.POINT_TO_KEY
 import kotlinx.android.synthetic.main.activity_main.*
-import net.lampa.lab2intent.LoginActivity.Companion.NAME_KEY
-import net.lampa.lab2intent.LoginActivity.Companion.PHONE_KEY
-import net.lampa.lab2intent.LoginActivity.Companion.SURNAME_KEY
-import net.lampa.lab2intent.SetPathActivity.Companion.POINT_FROM_KEY
-import net.lampa.lab2intent.SetPathActivity.Companion.POINT_TO_KEY
+import net.kotensky.lab2intent.R
 
 class MainActivity : AppCompatActivity() {
 
